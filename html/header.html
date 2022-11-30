@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>TeaHouse</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="../css/header.min.css">
+  <!-- FontAwesome 6.2.0 CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <!-- Font Family -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!-- Start Header  -->
+  <header class="header">
+    <div class="header-contacts">
+      <div class="container">
+        <div class="d-flex list">
+          <ul class="item d-flex">
+            <li><a href="" class="late"><i class="fa fa-envelope"></i><span>CONTACT </span></a></li>
+            <li><a href="" class="late"><i class="fa fa-clock"></i><span>08:00 - 21:00</span></a></li>
+            <li><a href=""><i class="fa fa-phone"></i><span>+0123456789</span></a></li>
+          </ul>
+          <ul class="item d-flex ">
+            <li><a href=""><i class="fa fa-search"></i></a></li>
+            <li class="modal-login">
+              <!-- Modal trigger button -->
+              <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#modalId">
+                Đăng nhập       
+              </button>
+
+              <!-- Modal Body -->
+              <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+              <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false"
+                role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="modalTitleId">Đăng nhập</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="mb-3">
+                        <label for="" class="form-label">Email</label>
+                        <input type="email" class="form-control" name="" id="" aria-describedby="emailHelpId"
+                          placeholder="abc@mail.com">
+                        <!--  -->
+                        <label for="" class="form-label">PassWord</label>
+                        <input type="password" class="form-control" name="" id="" aria-describedby="emailHelpId"
+                          placeholder="*****">
+                        <!--  -->
+                        <div class="form-check form-check-inline mt-3">
+                          <input class="form-check-input" type="checkbox" id="" value="option1">
+                          <label class="form-check-label mt-0" for="">Ghi nhớ mật khẩu</label>
+                        </div>
+
+                        <p class="text-black "><a href="">Quên mật khẩu ?</a></p>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Đóng</button>
+                      <button type="button" class="btn btn-success">Đăng nhập</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+           
+            </li>
+            <li class="modal-logup">
+              <!-- Modal trigger button -->
+              <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#modalId1">
+                Đăng ký
+              </button>
+
+              <!-- Modal Body -->
+              <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+              <div class="modal fade" id="modalId1" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false"
+                role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="modalTitleId">Đăng ký</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="mb-3">
+                        <label for="" class="form-label">Name </label>
+                        <input type="email" class="form-control" name="" id="" aria-describedby="emailHelpId"
+                          placeholder="Nguyễn Văn A">
+                          <div class="mb-3">
+                            <label for="" class="form-label">City</label>
+                            <select class="form-select form-select-lg" name="" id="">
+                              <option selected>Hà Nội</option>
+                              <option value="">Hồ Chí Minh</option>
+                              <option value="">Đà Nẵng</option>
+                              <option value="">Khác</option>
+                            </select>
+                          </div>
+                          <div class="mb-3">
+                            <label for="" class="form-label">Huyện</label>
+                            <select class="form-select form-select-lg" name="" id="">
+                              <option selected>Huyện 1</option>
+                              <option value="">Huyện 2</option>
+                              <option value="">Huyện 3</option>
+                              <option value="">Huyện 4</option>
+                            </select>
+                          </div>
+                          <!--  -->
+                          <label for="" class="form-label">Email</label>
+                          <input type="email" class="form-control" name="" id="" aria-describedby="emailHelpId"
+                            placeholder="abc@mail.com">
+                        <!--  -->
+                        <label for="" class="form-label">PassWord</label>
+                        <input type="password" class="form-control" name="" id="" aria-describedby="emailHelpId"
+                          placeholder="*****">
+                          <label for="" class="form-label">Confirm PassWord</label>
+                          <input type="password" class="form-control" name="" id="" aria-describedby="emailHelpId"
+                            placeholder="*****">
+                        
+
+                      
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Đóng</button>
+                      <button type="button" class="btn btn-success">Đăng Ký</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+           
+            </li>
+            <li><a href=""><i class="fa fa-shopping-basket"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="header-nav">
+      <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container">
+          <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- content -->
+          <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="#" aria-current="page">Trang chủ<span
+                    class="visually-hidden">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Giới thiệu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Thực đơn</a>
+              </li>
+
+            </ul>
+            <div>
+              <img src="../asset/img/logo.png" alt="">
+            </div>
+            <ul class="navbar-nav me-auto mt-2 mt-lg-0 text-right">
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Tin Tức </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Liên hệ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link late" href="#">Đặt bàn</a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- End Header -->
+
+  <!-- Start Carousel -->
+  <section class="carousel">
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="../asset/img/l-1.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="../asset/img/l-1.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../asset/img/l-1.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../asset/img/l-1.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../asset/img/l-1.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+  <!-- End Carousel -->
+  <!-- Start Product -->
+  <section class="product section">
+    <div class="container">
+      <div class="text-heading">Danh mục sản phẩm</div>
+      <div class="row"  id="product-list">
+        
+      </div>
+
+    </div>
+  </section>
+  <!-- End Product -->
+
+ 
+  
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      watchSlidesProgress: true,
+      slidesPerView: 3,
+    });
+  </script>
+  <!-- end -->
+  <script src="../js/product.js"></script>
+</body>
+
+</html>
+
+
+
