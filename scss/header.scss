@@ -92,8 +92,9 @@ $text-grey: rgba(102, 102, 102, 0.85);
                         }
                     }
 
-                    .modal-login,  .modal-logup {
-                       
+                    .modal-login,
+                    .modal-logup {
+
                         .modal {
                             .modal-dialog {
                                 .modal-content {
@@ -102,32 +103,36 @@ $text-grey: rgba(102, 102, 102, 0.85);
 
                                         button {}
                                     }
-                                    .modal-body{
-                                        p{
+
+                                    .modal-body {
+                                        p {
                                             margin-top: 20px;
-                                            a{
+
+                                            a {
                                                 color: green !important;
-                                             
+
                                                 font-style: italic;
                                             }
                                         }
-                                        select{
-                                            height:40px;
+
+                                        select {
+                                            height: 40px;
                                             font-size: 15px;
-                                            option{
+
+                                            option {
                                                 font-size: 15px;
                                             }
                                         }
-                                        label{
-                                            color:#4d8a54;
+
+                                        label {
+                                            color: #4d8a54;
                                             font-size: 18px;
                                             margin-top: 5px;
                                         }
 
                                     }
-                                    .modal-footer{
 
-                                    }
+                                    .modal-footer {}
                                 }
                             }
                         }
@@ -236,9 +241,102 @@ $text-grey: rgba(102, 102, 102, 0.85);
             text-align: center;
 
         }
-        .card{
-          
+
+        .about-button,
+        .about-content {
+            margin-left: 20px;
+            margin-top: 30px;
         }
-      
+
+        .about-button ul {
+            width: 100%;
+            border: 1px solid gray;
+            border-radius: 30px;
+            margin-left: 50px;
+            width: 90%;
+        }
+
+        .about-button ul li button {
+            padding: 15px 40px;
+            border-radius: 30px;
+            font-size: 0.88889em;
+            font-weight: 600;
+            color: gray;
+            /* margin: -1px -2px -1px; */
+            /* opacity:1 ; */
+            display: inline-block;
+            border: 0 none;
+            background: white;
+
+        }
+
+        .about-button ul li button.active {
+            color: white;
+            background-color: #4d8a54;
+            opacity: 1;
+            border: 1px solid #4d8a54;
+
+        }
+
+        // Product about content 
+        .about-content {
+            .single-tab-content {
+                
+                    .product-card{
+                        // height: 400px;
+                        img{
+                            width: 100%;
+                            height: 300px;
+                        }
+                        .card-body{
+                            height: 150px;
+                        }
+                    }
+            
+        }
+
+    }
+        /* Responsive */
+        @media screen and (max-width:1200px) {
+            .about-button ul li button {
+                padding: 8px 20px;
+
+            }
+        }
+
+        @media screen and (max-width:992px) {
+            .about-button ul {
+                border-top: none !important;
+                border-left: none !important;
+                border-right: none !important;
+                border-bottom: 1px solid gray;
+                border-radius: 0 !important;
+                width: 80%;
+            }
+
+            .about .section-titel {
+                margin-left: 0 !important;
+            }
+
+            .about-button,
+            .about-content {
+                margin-left: 0 !important
+            }
+
+            .about-content .single-tab-content h4 {
+                margin-left: 20px !important;
+            }
+
+            .about .single-tab-content ul {
+                margin-left: 0 !important;
+                padding: 0 !important;
+            }
+
+            .about-content .single-tab-content p {
+
+                margin-left: 20px !important;
+            }
+        }
+
     }
 }

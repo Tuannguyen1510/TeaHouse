@@ -55,21 +55,26 @@ a {
   color: white;
   font-weight: 100;
 }
-.header .header-contacts .container .list .item .modal-login .modal .modal-dialog .modal-content .modal-body p, .header .header-contacts .container .list .item .modal-logup .modal .modal-dialog .modal-content .modal-body p {
+.header .header-contacts .container .list .item .modal-login .modal .modal-dialog .modal-content .modal-body p,
+.header .header-contacts .container .list .item .modal-logup .modal .modal-dialog .modal-content .modal-body p {
   margin-top: 20px;
 }
-.header .header-contacts .container .list .item .modal-login .modal .modal-dialog .modal-content .modal-body p a, .header .header-contacts .container .list .item .modal-logup .modal .modal-dialog .modal-content .modal-body p a {
+.header .header-contacts .container .list .item .modal-login .modal .modal-dialog .modal-content .modal-body p a,
+.header .header-contacts .container .list .item .modal-logup .modal .modal-dialog .modal-content .modal-body p a {
   color: green !important;
   font-style: italic;
 }
-.header .header-contacts .container .list .item .modal-login .modal .modal-dialog .modal-content .modal-body select, .header .header-contacts .container .list .item .modal-logup .modal .modal-dialog .modal-content .modal-body select {
+.header .header-contacts .container .list .item .modal-login .modal .modal-dialog .modal-content .modal-body select,
+.header .header-contacts .container .list .item .modal-logup .modal .modal-dialog .modal-content .modal-body select {
   height: 40px;
   font-size: 15px;
 }
-.header .header-contacts .container .list .item .modal-login .modal .modal-dialog .modal-content .modal-body select option, .header .header-contacts .container .list .item .modal-logup .modal .modal-dialog .modal-content .modal-body select option {
+.header .header-contacts .container .list .item .modal-login .modal .modal-dialog .modal-content .modal-body select option,
+.header .header-contacts .container .list .item .modal-logup .modal .modal-dialog .modal-content .modal-body select option {
   font-size: 15px;
 }
-.header .header-contacts .container .list .item .modal-login .modal .modal-dialog .modal-content .modal-body label, .header .header-contacts .container .list .item .modal-logup .modal .modal-dialog .modal-content .modal-body label {
+.header .header-contacts .container .list .item .modal-login .modal .modal-dialog .modal-content .modal-body label,
+.header .header-contacts .container .list .item .modal-logup .modal .modal-dialog .modal-content .modal-body label {
   color: #4d8a54;
   font-size: 18px;
   margin-top: 5px;
@@ -137,9 +142,81 @@ a {
   height: 400px;
   width: 100%;
 }
+.product .container {
+  /* Responsive */
+}
 .product .container .text-heading {
   font-size: 40px;
   font-weight: 500;
   color: #4d8a54;
   text-align: center;
+}
+.product .container .about-button,
+.product .container .about-content {
+  margin-left: 20px;
+  margin-top: 30px;
+}
+.product .container .about-button ul {
+  width: 100%;
+  border: 1px solid gray;
+  border-radius: 30px;
+  margin-left: 50px;
+  width: 90%;
+}
+.product .container .about-button ul li button {
+  padding: 15px 40px;
+  border-radius: 30px;
+  font-size: 0.88889em;
+  font-weight: 600;
+  color: gray;
+  /* margin: -1px -2px -1px; */
+  /* opacity:1 ; */
+  display: inline-block;
+  border: 0 none;
+  background: white;
+}
+.product .container .about-button ul li button.active {
+  color: white;
+  background-color: #4d8a54;
+  opacity: 1;
+  border: 1px solid #4d8a54;
+}
+.product .container .about-content .single-tab-content .product-card img {
+  width: 100%;
+  height: 300px;
+}
+.product .container .about-content .single-tab-content .product-card .card-body {
+  height: 150px;
+}
+@media screen and (max-width: 1200px) {
+  .product .container .about-button ul li button {
+    padding: 8px 20px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .product .container .about-button ul {
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-bottom: 1px solid gray;
+    border-radius: 0 !important;
+    width: 80%;
+  }
+  .product .container .about .section-titel {
+    margin-left: 0 !important;
+  }
+  .product .container .about-button,
+.product .container .about-content {
+    margin-left: 0 !important;
+  }
+  .product .container .about-content .single-tab-content h4 {
+    margin-left: 20px !important;
+  }
+  .product .container .about .single-tab-content ul {
+    margin-left: 0 !important;
+    padding: 0 !important;
+  }
+  .product .container .about-content .single-tab-content p {
+    margin-left: 20px !important;
+  }
 }
