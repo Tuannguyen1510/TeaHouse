@@ -20,7 +20,7 @@ btnLogin.addEventListener("click", (e) => {
       }
       if (localStorage.getItem(email.value) == json) {
         alert("dang nhap thanh cong");
-        window.location.href = "header.html";
+        window.location.href = "../html/header.html";
       } else {
         alert("dang nhap that bai");
       }
